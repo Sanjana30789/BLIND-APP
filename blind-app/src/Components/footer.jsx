@@ -3,7 +3,7 @@ import '../styles/footer.css';
 
 const Footer = () => (
   <footer className="footer">
-    <p>&copy; {new Date().getFullYear()} Assistive Companion. All rights reserved.</p>
+    <p>&copy; {new Date().getFullYear()} Netra AI. All rights reserved.</p>
   </footer>
 );
 
