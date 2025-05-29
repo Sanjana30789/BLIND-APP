@@ -1,0 +1,77 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem;
+    background: linear-gradient(90deg, #1f1f1f, #3a3a3a);
+  border: none; /* remove border to keep it smooth */
+  padding: 0.5rem 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    
+  }
+
+  .logo-heading {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* controls the gap between logo and heading, reduce this to decrease spacing */
+  }
+  
+  h1 {
+    color: white;
+    margin: 0; /* remove default margin */
+    padding-left: 0;
+    font-size: 1.5rem; /* optional for better sizing */
+  }
+  
+  .logo {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+    /* no margin here */
+  }
+  
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 7rem;
+  }
+  
+ 
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    font-size: 15px;
+    padding-right: 15px;
+    transition: color 0.3s ease, transform 0.2s ease;
+  }
+  
+  /* Smooth underline on hover */
+  .nav-links a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: greenyellow;
+    transition: width 0.3s ease;
+    border-radius: 2px;
+  }
+  
+  /* On hover: text color, underline expand, and slight scale */
+  .nav-links a:hover {
+    color: greenyellow;
+    transform: scale(1.1);
+  }
+  
+  .nav-links a:hover::after {
+    width: 100%;
+  }
+  
+  /* Optional: add a subtle shadow glow on hover */
+  .nav-links a:hover {
+    text-shadow: 0 0 5px greenyellow;
+  }
+  
